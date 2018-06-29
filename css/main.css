@@ -96,12 +96,111 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+header {
+  font-family: URW Chancery L, cursive;
+  justify-content: space-around;
+}
+
+header {
+  display: flex;
+  min-height: 100px;
+  position: fixed;
+  width: 100%;
+}
+
+/*#### BACKGROUND DARK BLUE ####*/
+header {
+  background: rgba(3, 29, 68, 0.9);
+  color: #FFF;
+}
+
+header span {
+  display: none;
+}
+
+header nav {
+  align-self: center;
+  min-width: 100px;
+  text-align: center;
+}
+
+header a {
+  background-color: #cddddd;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: #415A77;
+}
+
+header a:hover {
+  background: white;
+  color: #031D44;
+}
+
+.navContact {
+  padding: 10px 12px;
+}
+
+/* #########--- section news ---#########*/
+
+body > h1 {
+  padding-top: 100px;
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    background: #cddddd;
+    box-shadow: 0px 0px 12px #031D44;
+}
+
+.newsArticle h2 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
 
 
 
 
+/*#######################################
+------------ Responsive ----------------
+########################################*/
 
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  header nav {
+    width: 72%;
+  }
+  header span {
+    display: initial;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  header a, .navContact {
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    padding: 30px 3%;
+    margin: 0 1%;
+  }
+}
 
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
 
 
 
