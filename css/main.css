@@ -106,12 +106,16 @@ header {
   display: flex;
   justify-content: space-around;
   min-height: 100px;
+  min-width: 320px;
   position: fixed;
   width: 100%;
 }
 
+header h1 {
+    width: 47%;
+}
 
-header {
+header, .news a {
   background: rgba(3, 29, 68, 0.9);
   color: #FFF;
 }
@@ -129,13 +133,13 @@ header nav {
   text-align: center;
 }
 
-header a {
+header a, .news a {
   padding: 10px;
   border-radius: 10px;
   text-align: center;
 }
 
-header a:hover {
+header a:hover, .newsArticle2 a:hover {
   background: white;
   color: #031D44;
 }
@@ -146,26 +150,33 @@ header a:hover {
 
 /* ~~~~~~~~~~~~~~ Couleur des polices ~~~~~~~~~~~~~*/
 
-.news h2, header a {
+.news h2, header a, .newsArticle2 h3 {
   color: #415A77;
 }
 
-.news h3{
+.newsArticle h3{
   color: #031D44;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+/* #########--- section news ---#########*/
+
+.news {
+  text-align: center;
+}
+
+.news h2 {
+  box-shadow: 0px 0px 12px #031D44;
+}
 
 .newsArticle2, header a, .news h2 {
   background: #cddddd;
 }
 
-.newsArticle2, .news h2{
-  box-shadow: 0px 0px 12px #031D44;
+.newsArticle2{
+  box-shadow: 0px 0px 3px #031D44;
 }
-
-/* #########--- section news ---#########*/
 
 .news h2 {
   padding-top: 110px;
@@ -173,7 +184,10 @@ header a:hover {
   margin: 0;
   text-align: center;
   font-size: 25px;
+}
 
+.newsArticle , .newsArticle2 {
+  padding-bottom: 20px;
 }
 
 .newsArticle h3, .newsArticle2 h3 {
@@ -185,11 +199,22 @@ header a:hover {
 
 .newsArticle img, .newsArticle2 img {
   width: 100%;
+  margin-bottom: 25px
 }
 
 .newsArticle p, .newsArticle2 p {
   padding: 10px;
 }
+
+.newsArticle a , .newsArticle2 a {
+  text-decoration: none;
+}
+
+.newsArticle a:hover  {
+  background: #cddddd;
+  color: #031D44;
+}
+
 
 
 
