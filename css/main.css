@@ -110,7 +110,7 @@ header {
   width: 100%;
 }
 
-/*#### BACKGROUND DARK BLUE ####*/
+
 header {
   background: rgba(3, 29, 68, 0.9);
   color: #FFF;
@@ -130,7 +130,6 @@ header nav {
 }
 
 header a {
-  background-color: #cddddd;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
@@ -145,12 +144,25 @@ header a:hover {
   padding: 10px 12px;
 }
 
+/* ~~~~~~~~~~~~~~ Couleur des polices ~~~~~~~~~~~~~*/
+
 .news h2, header a {
   color: #415A77;
 }
 
 .news h3{
   color: #031D44;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.newsArticle2, header a, .news h2 {
+  background: #cddddd;
+}
+
+.newsArticle2, .news h2{
+  box-shadow: 0px 0px 12px #031D44;
 }
 
 /* #########--- section news ---#########*/
@@ -161,8 +173,7 @@ header a:hover {
   margin: 0;
   text-align: center;
   font-size: 25px;
-  background: #cddddd;
-  box-shadow: 0px 0px 12px #031D44;
+
 }
 
 .newsArticle h3, .newsArticle2 h3 {
@@ -174,6 +185,10 @@ header a:hover {
 
 .newsArticle img, .newsArticle2 img {
   width: 100%;
+}
+
+.newsArticle p, .newsArticle2 p {
+  padding: 10px;
 }
 
 
