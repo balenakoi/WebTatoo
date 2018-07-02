@@ -164,6 +164,7 @@ header a:hover, .newsArticle2 a:hover {
 
 .news {
   text-align: center;
+  border: 1px solid #cddddd;
 }
 
 .news h2 {
@@ -246,16 +247,73 @@ header a:hover, .newsArticle2 a:hover {
     padding: 20px 2%;
     margin: 0 1%;
   }
+
+  .newsArticle2 img{
+    width: 100%;
+    max-width: 500px;
+
+  }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  /*########## FONT SIZE ##########*/
+  header a span {
+    font-size: 15px;
+  }
 
+  .news {
+    font-size: 20px;
+  }
+
+  .news h3 {
+    font-size: 25px
+  }
+
+  .news h2 {
+    font-size: 30px;
+  }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
+  /*########## FONT SIZE ##########*/
+  header a span, header a{
+    font-size: 25px;
+  }
+
+  .news {
+    margin: 0 75px;
+    font-size: 20px;
+  }
+
+  .news h3 {
+    font-size: 25px
+  }
+
+  .news h2 {
+    font-size: 30px;
+  }
+
+  .newsContainer {
+    display: flex;
+    align-content: stretch;
+    background-color: #cddddd;
+    box-shadow: 0px 0px 3px #031D44;
+  }
+
+  .newsArticle2, .newsArticle:last-child {
+    width: 50%;
+  }
+
+  .newsArticle:last-child {
+   padding: 0 10px;
+  }
+
+  .newsArticle:last-child h3{
+    color: #415A77;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
