@@ -13,18 +13,8 @@
 html {
     color: #222;
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.5;
 }
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -96,11 +86,48 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.paragraphe{
+  margin-right: auto;
+}
+.row{
+  margin-top:0px;
+  background: #415A77;
 
-
-
-
-
+}
+.footer-social li {
+  display: inline;
+}
+.social{
+    margin-top: 100px;
+    margin-right: 30px;
+    font-size: 1.2rem;
+}
+.contact{
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 90px;
+}
+.copy{
+  background:  #415A77;
+  margin-top: -28px;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+}
+.background{
+top: 0px;
+left: 0px;
+background-size: cover;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+}
+.news{
+  background: black;
+  height: 200px;
+}
 
 
 
@@ -200,7 +227,29 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  .row{
+    margin-top: 0px;
+    background: #415A77;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+  .h3, .p{
+    display:flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .footer-social {
+     text-align: left;
+     margin-top:5px;
+  font-size: 1.2rem;
+   }
+  .footer-social li {
+     display: inline;
+   }
+  .footer-social span {
+    margin-top: -20px;
+    }  /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
