@@ -1,0 +1,17 @@
+body{
+  background: #CDDDDD;
+  margin: 0;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+	color: #415A77;
+	margin-top: 15px;
+ 
+ 
+  
+}
