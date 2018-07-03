@@ -103,6 +103,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+<<<<<<< HEAD
 
  header {
    font-family: URW Chancery L, cursive;
@@ -169,20 +170,158 @@ background-repeat: no-repeat;
 }
 .story img{
   width: 50%;
+=======
+body {
+  font-family: monospace, fantasy;
+}
+
+header {
+  font-family: URW Chancery L, cursive;
+  display: flex;
+  justify-content: space-around;
+  min-height: 100px;
+  min-width: 320px;
+  position: fixed;
+  width: 100%;
+}
+
+header h1 {
+    width: 47%;
+}
+
+header, .news a {
+  background: rgba(3, 29, 68, 0.9);
+  color: #FFF;
+}
+
+header span {
+  display: none;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-self: center;
+  min-width: 100px;
+  text-align: center;
+}
+
+header a, .news a {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+header a:hover, .newsArticle2 a:hover {
+  background: white;
+  color: #031D44;
+}
+
+.navContact {
+  padding: 10px 12px;
+}
+
+/* ~~~~~~~~~~~~~~ Couleur des polices ~~~~~~~~~~~~~*/
+
+.news h2, header a, .newsArticle2 h3 {
+  color: #415A77;
+}
+
+.newsArticle h3{
+  color: #031D44;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* #########--- section news ---#########*/
+
+.news {
+  text-align: center;
+  border: 1px solid #cddddd;
+}
+
+.news h2 {
+  box-shadow: 0px 0px 12px #031D44;
+}
+
+.newsArticle2, header a, .news h2 {
+  background: #cddddd;
+}
+
+.newsArticle2{
+  box-shadow: 0px 0px 3px #031D44;
+}
+
+.news h2 {
+  padding-top: 110px;
+  padding-bottom: 10px;
+  margin: 0;
+  text-align: center;
+  font-size: 25px;
+}
+
+.newsArticle , .newsArticle2 {
+  padding-bottom: 20px;
+>>>>>>> 115f8787f186ee8d79a6bdd812b3ca4ff094704e
 }
 .row{
   margin-top:-15px;
   background: #415A77;
 }
+<<<<<<< HEAD
 .footer-social li {
   display: inline;
+=======
+
+.newsArticle img, .newsArticle2 img {
+  width: 100%;
+  margin-bottom: 25px
+>>>>>>> 115f8787f186ee8d79a6bdd812b3ca4ff094704e
 }
 .social{
     margin-top:0px;
     margin-right: 30px;
     font-size: 1.2rem;
 }
+<<<<<<< HEAD
 .contact {
+=======
+
+.newsArticle a , .newsArticle2 a {
+  text-decoration: none;
+}
+
+.newsArticle a:hover  {
+  background: #cddddd;
+  color: #031D44;
+}
+
+
+
+
+
+/*#######################################
+------------ Responsive ----------------
+########################################*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  header h1 {
+    width: 30%;
+    text-align: center;
+  }
+  header nav {
+    width: 76%;
+  }
+  header span {
+    display: initial;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  header a, .navContact {
+    background: transparent;
+>>>>>>> 115f8787f186ee8d79a6bdd812b3ca4ff094704e
     color: white;
     font-size: 1.2rem;
     margin-right: 0;
@@ -203,7 +342,83 @@ background-repeat: no-repeat;
       height: auto;
       border-top: 2px solid white;
   }
+<<<<<<< HEAD
 
+=======
+
+  .newsArticle2 img{
+    width: 100%;
+    max-width: 500px;
+
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  /*########## FONT SIZE ##########*/
+  header a span {
+    font-size: 15px;
+  }
+
+  .news {
+    font-size: 20px;
+  }
+
+  .news h3 {
+    font-size: 25px
+  }
+
+  .news h2 {
+    font-size: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+  /*########## FONT SIZE ##########*/
+  header a span, header a{
+    font-size: 25px;
+  }
+
+  .news {
+    margin: 0 75px;
+    font-size: 20px;
+  }
+
+  .news h3 {
+    font-size: 25px
+  }
+
+  .news h2 {
+    font-size: 30px;
+  }
+
+  .newsContainer {
+    display: flex;
+    align-content: stretch;
+    background-color: #cddddd;
+    box-shadow: 0px 0px 3px #031D44;
+  }
+
+  .newsArticle2, .newsArticle:last-child {
+    width: 50%;
+  }
+
+  .newsArticle:last-child {
+   padding: 0 10px;
+  }
+
+  .newsArticle:last-child h3{
+    color: #415A77;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+>>>>>>> 115f8787f186ee8d79a6bdd812b3ca4ff094704e
 
 
 
