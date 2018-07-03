@@ -5,26 +5,21 @@
   background-color: #031D44;
   justify-content: center;
   color: white;
- 
 
-  
-}
-img{
-  max-width: 510px;
-  width: 100%;
 
-  
+
 }
+
 /*media query for mobile phon */
 
 @media and (min-width: 350px){
     img{
- 
+
     flex-direction: column;
-  
-      
+
+
   }
-  
+
   /*media query for tablet*/
 
 @media and (max-width: 760px){
@@ -33,6 +28,6 @@ img{
   }
   .container {
     flex-direction: column;
-    
+
   }
 }
